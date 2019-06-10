@@ -1,0 +1,139 @@
+.parallax-container {
+  min-height: 100vh;
+}
+
+.mask {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg_home {
+  background: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home_header {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+}
+
+.home_header h1 {
+  margin: 0;
+  font-size: 60px;
+  padding: 25px 0;
+}
+
+.home_header small {
+  font-size: 20px;
+}
+
+.btn_down {
+  width: 50px;
+  height: 50px;
+  background-color: trasperent;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.btn_down i {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-animation: drop 1s linear infinite running;
+          animation: drop 1s linear infinite running;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -10px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 20px;
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -10px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 20px;
+    opacity: 0;
+  }
+}
+
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 150px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/logo_new_light.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sidenav-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav, .sidenav {
+  background-color: #5c1198;
+  opacity: .85;
+}
+
+nav li > a, .sidenav li > a {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+  .brand-logo {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
