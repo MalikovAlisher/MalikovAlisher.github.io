@@ -10,7 +10,17 @@ $(document).ready(function(){
         });
         $(this).remove();
     });
-
+    
+    $(function() {
+        $('.chart').easyPieChart({
+            barColor: '#000',
+            scaleColor: false,
+            size: 100,
+            lineWidth: 10,
+            trackColor: '#e1e1e1'
+        });
+    });
+    
 
     
 
