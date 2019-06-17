@@ -1,10 +1,14 @@
 @import "aboutAndSkills"
 @import "portfolio"
+@import "fonts"
+@import "var"
 
 body
     background-color: #f1f1f1
     box-sizing: border-box
-    
+    font-family: $gothic
+.col
+    padding: 0 2rem !important   
 .parallax-container
     min-height: 100vh
 
@@ -38,6 +42,7 @@ body
         margin: 0
         font-size: 60px
         padding: 25px 0 
+        font-family: $gothicBold
     small
         font-size: 20px
 
@@ -84,7 +89,6 @@ body
 nav, .sidenav
     box-shadow:none!important
     background-color: #fff
-    opacity: .85
     .brand-logo
         color: #333
         margin-left: 5%
@@ -124,7 +128,7 @@ nav, .sidenav
 
 .header
     letter-spacing: 4px
-    font-family: relaway, sans-serif
+    font-family: $gothicBold
     font-weight: 700
     display: inline-block
     &:after

@@ -1,5 +1,5 @@
 article {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -8,9 +8,10 @@ article {
 }
 
 .about_me p {
-  font-family: 'Noticia Text', serif;
   font-size: 24px;
-  line-height: 2.3;
+  line-height: 1.9;
+  text-indent: 1.5em;
+  font-style: italic;
 }
 
 .skills {
@@ -23,11 +24,11 @@ article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  background-color: #f48484;
+  background-color: #f28024;
   -webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
   z-index: 2;
-  margin-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .box {
@@ -40,7 +41,7 @@ article {
   font-weight: 700;
   font-size: 20px;
   padding-bottom: 20px;
-  color: red;
+  color: #e7e6eb;
 }
 
 .chart {
@@ -91,8 +92,8 @@ article {
 
 .portfolio_mask span {
   font-size: 1.6em;
-  color: #ffffff;
-  border: 2px solid #fff;
+  color: #ec8a38;
+  border: 2px solid #dc7015;
   border-radius: 3px;
   position: absolute;
   top: 50%;
@@ -124,8 +125,10 @@ article {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 8px;
+  border-radius: 9px;
   margin: 2%;
+  -webkit-box-shadow: 0 0 15px #333;
+          box-shadow: 0 0 15px #333;
 }
 
 .portfolio_items .portfolio_item:hover > .portfolio_mask {
@@ -135,6 +138,15 @@ article {
   transition: all .6s ease;
 }
 
+.portfolio_items .portfolio_item:hover {
+  -webkit-box-shadow: 10px 10px 20px #000;
+          box-shadow: 10px 10px 20px #000;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .portfolio_items .portfolio_item a {
   width: 100%;
   height: 100%;
@@ -142,10 +154,39 @@ article {
   z-index: 19;
 }
 
+@font-face {
+  font-family: "gothicBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot");
+  src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gothicItalic";
+  font-weight: italic;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.eot");
+  src: url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gothic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot");
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
+}
+
 body {
   background-color: #f1f1f1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "gothic";
+}
+
+.col {
+  padding: 0 2rem !important;
 }
 
 .parallax-container {
@@ -186,6 +227,7 @@ body {
   margin: 0;
   font-size: 60px;
   padding: 25px 0;
+  font-family: "gothicBold";
 }
 
 .home_header small {
@@ -263,7 +305,6 @@ nav, .sidenav {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   background-color: #fff;
-  opacity: .85;
 }
 
 nav .brand-logo, .sidenav .brand-logo {
@@ -321,7 +362,7 @@ nav i, .sidenav i {
 
 .header {
   letter-spacing: 4px;
-  font-family: relaway, sans-serif;
+  font-family: "gothicBold";
   font-weight: 700;
   display: inline-block;
 }
@@ -342,6 +383,21 @@ nav i, .sidenav i {
   .skills {
     -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  }
+  .about_me p {
+    font-size: 22px;
+    line-height: 1.5;
+    text-indent: 1.6em;
+    font-style: italic;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .about_me p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-indent: 1.5em;
+    font-style: italic;
   }
 }
 /*# sourceMappingURL=style.css.map */

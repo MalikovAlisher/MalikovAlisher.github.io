@@ -1,3 +1,5 @@
+
+    
 .portfolio_mask
     position: absolute
     top: 0
@@ -12,8 +14,8 @@
     overflow: hidden
     span
         font-size: 1.6em
-        color: #ffffff
-        border: 2px solid #fff
+        color: #ec8a38
+        border: 2px solid darken(#ec8a38, 10%)
         border-radius: 3px
         position: absolute
         top: 50%
@@ -35,11 +37,16 @@
         background-position: center
         background-size: cover
         background-repeat: no-repeat
-        border-radius: 8px
+        border-radius: 9px
         margin: 2%
+        box-shadow: 0 0 15px #333
         &:hover> .portfolio_mask
             transform: scale(1)
             transition: all .6s ease
+        &:hover
+            box-shadow: 10px 10px 20px #000
+            transition: all .7s ease
+            transform: scale(1.05)
         a
             width: 100%
             height: 100%

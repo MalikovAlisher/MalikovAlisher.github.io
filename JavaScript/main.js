@@ -18,7 +18,7 @@ $(document).ready(function(){
         skillsTop = skills.offset().top;
     $(window).bind('scroll', function(){
         let windowTop = $(this).scrollTop();
-        if(windowTop > skillsTop - 150){
+        if(windowTop > skillsTop - 100){
             $(function() {
                 $('.chart').easyPieChart({
                     barColor: '#000',
@@ -31,7 +31,19 @@ $(document).ready(function(){
         };
     })    
 
+    $(".portfolio_mask a").click(function(event){
+        event.preventDefault();
+      });
 
+         //smooth scroll
+    $("[data-scroll]").on("click", function(event){
+        event.preventDefault();
+        var blockId = $(this).data('scroll'),
+            blockOffset = $(blockId).offset().top;
+        $("html, body").animate({
+            scrollTop: blockOffset
+        },700);
 
+   })
 
 });

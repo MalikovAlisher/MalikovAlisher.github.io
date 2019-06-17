@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  
+
   <section id="home">
     <div class="mask"></div>
     <div class="parallax-container">
@@ -27,7 +27,7 @@
       <h1>Junior Front-End Developer</h1>
       <small>Creating responsive Web Application</small>
     </header>
-    <div class="btn_down">
+    <div class="btn_down" data-scroll="#about">
       <i class="material-icons">keyboard_arrow_down</i>
     </div>
     <div class="locn">
@@ -39,46 +39,47 @@
         <a href="#!" class="brand-logo logo"><span>Malikov</span>Alisher</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contanct</a></li>
+          <li><a href="#" data-scroll="#home">Home</a></li>
+          <li><a href="#" data-scroll="#about">About Me</a></li>
+          <li><a href="#" data-scroll="#skills">Skills</a></li>
+          <li><a href="#" data-scroll="#portfolio">Portfolio</a></li>
+          <li><a href="#" data-scroll="#contact">Contanct</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contanct</a></li>
+      <li><a class="sidenav-close" href="#" data-scroll="#home">Home</a></li>
+      <li><a class="sidenav-close" href="#" data-scroll="#about">About Me</a></li>
+      <li><a class="sidenav-close" href="#" data-scroll="#skills">Skills</a></li>
+      <li><a class="sidenav-close" href="#" data-scroll="#portfolio">Portfolio</a></li>
+      <li><a class="sidenav-close" href="#" data-scroll="#contact">Contanct</a></li>
     </ul>
   </section>
   
-  <section class="about_me">
+  <section class="about_me" id="about">
     <article>
       <h2 class="header">About me </h2>
     </article>
     <div class="container">
       <div class="row">
-        <div class="col s6">
-          <p>Before switching to a new profession, I worked as a printing press operator. I have successfully completed
+        <div class="col  s12 m6">
+          <p>Before switching to a new profession, I worked as a printing press operator. Then I opened the world of information technology (IT), namely, front-end development. I am very sorry that I did not discover it for myself before. I have successfully completed
             my studies at the "CodeClass" School of Programmers. I also studied online resources such as: "freeСodeСamp"
             and "SoloLearn".</p>
         </div>
 
-        <div class="col s6">
-          <p>I am highly motivated, result-oriented, self-sufficient, hardworking. Ready to work in a team and
+        <div class="col s12 m6">
+          <p>I am constantly striving to learn new technologies and look to ways to better myself in this rapidly changing industry. I am highly motivated, result-oriented, self-sufficient, hardworking. Ready to work in a team and
             individually. Ready to learn new technologies, strives for professional growth. I work with maximum
             efficiency.</p>
+
         </div>
       </div>
     </div>
   </section>
   
-  <section class="skills">
+  <section class="skills" id="skills">
     <article>
       <h2 class="header">My Skills </h2>
     </article>
@@ -189,7 +190,7 @@
     </div>
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <article>
       <h2 class="header">Portfolio </h2>
     </article>
