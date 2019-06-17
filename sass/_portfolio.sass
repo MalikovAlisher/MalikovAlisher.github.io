@@ -1,0 +1,50 @@
+.portfolio_mask
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, .7)
+    border-radius: 8px
+    cursor: pointer
+    transform: scale(0)
+    transition: all .5s ease
+    overflow: hidden
+    span
+        font-size: 1.6em
+        color: #ffffff
+        border: 2px solid #fff
+        border-radius: 3px
+        position: absolute
+        top: 50%
+        left: 50%
+        padding: 0 6%
+        transform: translate(-50%, -50%)
+
+
+.portfolio_items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    .portfolio_item
+        width: 292px
+        height: 292px
+        position: relative
+        flex: 0 1 auto
+        transition: all .5s ease
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 8px
+        margin: 2%
+        &:hover> .portfolio_mask
+            transform: scale(1)
+            transition: all .6s ease
+        a
+            width: 100%
+            height: 100%
+            display: block
+            z-index: 19
+        
+        
+    

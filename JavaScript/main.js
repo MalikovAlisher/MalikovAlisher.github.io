@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 
 
-    $('.bg_home img').each(function() {
+    $('.bg_home .portfolio_item, img' ).each(function() {
         var src = $(this).attr('src');
         $(this).parent().css({
             'background-image' : 'url(' + src + ')',
@@ -11,18 +11,26 @@ $(document).ready(function(){
         $(this).remove();
     });
     
-    $(function() {
-        $('.chart').easyPieChart({
-            barColor: '#000',
-            scaleColor: false,
-            size: 100,
-            lineWidth: 10,
-            trackColor: '#e1e1e1'
-        });
-    });
-    
 
     
+
+    let skills = $('.skills'),
+        skillsTop = skills.offset().top;
+    $(window).bind('scroll', function(){
+        let windowTop = $(this).scrollTop();
+        if(windowTop > skillsTop - 150){
+            $(function() {
+                $('.chart').easyPieChart({
+                    barColor: '#000',
+                    scaleColor: false,
+                    size: 100,
+                    lineWidth: 10,
+                    trackColor: '#e1e1e1'
+                });
+            });
+        };
+    })    
+
 
 
 
