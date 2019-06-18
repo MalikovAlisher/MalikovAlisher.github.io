@@ -9,7 +9,15 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 
     /*===tag img to bgi== */
-    $('.bg_home .portfolio_item, img' ).each(function() {
+    $('.bg_home  img' ).each(function() {
+        var src = $(this).attr('src');
+        $(this).parent().css({
+            'background-image' : 'url(' + src + ')',
+        });
+        $(this).remove();
+    });
+
+    $('.portfolio_item img' ).each(function() {
         var src = $(this).attr('src');
         $(this).parent().css({
             'background-image' : 'url(' + src + ')',
