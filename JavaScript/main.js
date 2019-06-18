@@ -1,12 +1,15 @@
 $(document).ready(function(){
+    /*===preloader== */
     $(window).on('load', function() {
         $(".preloader").fadeOut("slow");
     });
+    
+    /*===material nav== */
     M.AutoInit();
     $('.sidenav').sidenav();
 
-
-    $('.bg_home .portfolio_item img' ).each(function() {
+    /*===tag img to bgi== */
+    $('.bg_home .portfolio_item, img' ).each(function() {
         var src = $(this).attr('src');
         $(this).parent().css({
             'background-image' : 'url(' + src + ')',
@@ -14,9 +17,7 @@ $(document).ready(function(){
         $(this).remove();
     });
     
-
-    
-
+    /*===plugin for skills=== */
     let skills = $('.skills'),
         skillsTop = skills.offset().top;
     $(window).bind('scroll', function(){

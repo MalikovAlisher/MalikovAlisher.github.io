@@ -655,4 +655,49 @@ nav i, .sidenav i {
     padding-top: 45px;
   }
 }
+
+@media only screen and (max-height: 414px) {
+  .home_header h1 {
+    margin: 0;
+    font-size: 22px;
+    padding: 10px 0;
+    font-family: "gothicBold";
+  }
+  .home_header p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .btn_down {
+    width: 30px;
+    height: 30px;
+  }
+  @-webkit-keyframes drop {
+    0% {
+      top: -10px;
+      opacity: 0;
+    }
+    30% {
+      top: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 3px;
+      opacity: 0;
+    }
+  }
+  @keyframes drop {
+    0% {
+      top: -10px;
+      opacity: 0;
+    }
+    30% {
+      top: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 3px;
+      opacity: 0;
+    }
+  }
+}
 /*# sourceMappingURL=style.css.map */
