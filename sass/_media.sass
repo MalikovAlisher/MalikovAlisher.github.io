@@ -11,7 +11,7 @@
             font-style: italic    
 
 
-@media only screen and (max-width: 772px)
+@media only screen and (max-width: 768px)
 
     .about_me
         p
@@ -19,3 +19,61 @@
             line-height: 1.5
             text-indent: 1.5em
             font-style: italic    
+    .my_foto
+        width: 152px
+        height: 152px
+        img
+            width: 150px
+            height: 150px
+
+@media only screen and (max-width: 576px)   
+
+    .home_header
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -70%)
+        text-shadow: 0 0 5px black
+        h1
+            margin: 0
+            font-size: 30px
+            padding: 25px 0 
+            font-family: $gothicBold
+        p
+            font-size: 15px 
+            margin: 0
+
+    .btn_down
+        width: 40px
+        height: 40px
+    @keyframes drop
+        0%
+            top: -10px
+            opacity: 0
+        30%
+            top: 5px
+            opacity: 1
+        100%
+            top: 10px
+            opacity: 0
+
+    .header
+        letter-spacing: 3px
+        font-size: 25px
+    .about_me
+        margin-bottom: 0
+        p
+            font-size: 16px 
+            line-height: 1.2
+            text-indent: 1.5em
+    .box
+        small
+            font-size: 16px
+
+    .my_foto
+        width: 100px
+        height: 100px
+        img
+            width: 98px
+            height: 98px
+    .page-footer
+        padding-top: 45px        
