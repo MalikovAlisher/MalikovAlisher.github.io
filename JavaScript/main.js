@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 
 
-    $('.bg_home .portfolio_item, img' ).each(function() {
+    $('.bg_home .portfolio_item img' ).each(function() {
         var src = $(this).attr('src');
         $(this).parent().css({
             'background-image' : 'url(' + src + ')',
@@ -45,5 +45,7 @@ $(document).ready(function(){
         },700);
 
    })
+
+
 
 });

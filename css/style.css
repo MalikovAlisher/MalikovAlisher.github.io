@@ -154,6 +154,68 @@ article {
   z-index: 19;
 }
 
+.contact {
+  text-align: center;
+}
+
+.contact small {
+  font-size: 16px;
+}
+
+.contact ul li {
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact ul li span {
+  font-size: 18px;
+}
+
+.contact i {
+  vertical-align: middle;
+  padding-right: 5%;
+}
+
+.page-footer {
+  background-color: #ffc785;
+  -webkit-box-shadow: 0 0 15px #f1f1f1;
+          box-shadow: 0 0 15px #f1f1f1;
+  padding: 1.5% 0 1%;
+}
+
+.page-footer_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social_links {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social_links img {
+  width: 20px;
+  height: 20px;
+}
+
 @font-face {
   font-family: "gothicBold";
   font-weight: bold;
