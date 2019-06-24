@@ -42,12 +42,8 @@ $(document).ready(function(){
             });
         };
     })    
-
-    $(".portfolio_mask a").click(function(event){
-        event.preventDefault();
-      });
-
-         //smooth scroll
+        
+        //smooth scroll
     $("[data-scroll]").on("click", function(event){
         event.preventDefault();
         var blockId = $(this).data('scroll'),
