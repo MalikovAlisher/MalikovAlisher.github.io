@@ -250,6 +250,7 @@ article {
   font-family: "gothicBold";
   font-weight: bold;
   font-style: normal;
+  font-display: fallback;
   src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot");
   src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-Bold.ttf") format("truetype");
 }
@@ -258,6 +259,7 @@ article {
   font-family: "gothicItalic";
   font-weight: italic;
   font-style: normal;
+  font-display: fallback;
   src: url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.eot");
   src: url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.ttf") format("truetype");
 }
@@ -266,6 +268,7 @@ article {
   font-family: "gothic";
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
   src: url("../fonts/CenturyGothic/CenturyGothic.eot");
   src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
 }
